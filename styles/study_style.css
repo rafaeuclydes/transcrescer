@@ -1,0 +1,149 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #000000;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 25px;
+}
+
+.header__logo {
+  width: 200px;
+}
+
+.header__user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
+.header__img {
+  width: 120px;
+  border-radius: 100px;
+}
+
+.header__text {
+  font-size: 18px;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  padding: 8px;
+  gap: 450px;
+  background: linear-gradient(to bottom, #fcd2dc, #ffffff, #c6e7f7);
+}
+
+.material-symbols-outlined {
+  font-size: 40px;
+  cursor: pointer;
+}
+
+/* Main container */
+.content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  place-items: center;
+  padding: 20px;
+  gap: 20px;
+}
+
+/* Link como card */
+.card {
+  text-decoration: none; /* remove sublinhado */
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Fundo do card */
+.card__fundo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(to bottom, #fcd2dc, #ffffff, #c6e7f7);
+  width: 200px;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  height: 280px;
+}
+
+/* Imagem do card */
+.card__img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Texto do card */
+.card__text {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+  padding-top: 15px;
+  text-align: center;
+}
+
+/* Main page Uninter */
+.main__uninter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  padding: 20px;
+}
+
+.main__img {
+  width: 280px;
+  border-radius: 100%;
+}
+
+.section__resumo {
+  font-size: 20px;
+  padding: 25px;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.section__module {
+  font-size: 18px;
+  padding: 25px;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.button {
+  display: block;
+  margin: auto;
+  width: 100px;
+  height: 40px;
+  background: linear-gradient(to bottom, #fcd2dc, #ffffff, #c6e7f7);
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  border: solid #fcd2dc;
+}
+
+a {
+  text-decoration: none;
+}
